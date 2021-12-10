@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Mukta:wght@200;300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 1rem 3rem;
+    font-family: 'Lora', serif;
+    color: #223B02;
+    background-color: #F0F2BA;
+}
+
+#apresentacao > img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+#apresentacao > div{
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body > nav > a{
+    font-size: x-large;
+}
+
+.sem-serifa{
+    font-family: 'Mukta', sans-serif;
+    color: #223B02;
+}
+
+.centralizar-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#objetivos{
+    margin-top: 4rem;
+}
+
+.carrosel{
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.carrosel > ul{
+    list-style: none;
+    display: flex;
+    width: 1050px;
+    height: 250px;   
+}
+
+.carrosel-item{
+    width: 350px;
+    height: 250px;
+}
+
+.carrosel > ul >li{
+    position: relative;
+    animation: slides 15s infinite ease-out;
+}
+@keyframes slides {
+    0%{left: 0;}
+    20%{left: 0;}
+    30%{left: -350px;}
+    60%{left: -350px;}
+    80%{left: -700px;}
+    90%{left: -700px;}
+    100%{left: 0px;}
+}
+#tecnologias{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#tecnologias > div > img{
+    margin: 2rem;
+}
+#tecnologias > h2{
+    margin-bottom: 8rem;
+}
+.flexor{
+    flex-wrap: wrap;
+}
+#experiencia{
+    display: flex;
+    flex-direction: column;
+}
+.item-exp{
+    margin-bottom: 2rem;
+}
+#experiencia > h2:nth-child(3){
+    margin-top: 1.5rem;
+}
+footer{
+    height: 6rem;
+}
+footer > div > a > img{
+    width: 25px;
+} 
+footer > div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20rem;
+}
+body > footer > p{
+    margin-top: 1rem;
+}
+@media (min-width: 768px) {
+    /*computador*/
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+    body > nav > div > a{
+        padding: 0 0.3rem;
+    }
+    #apresentacao {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #apresentacao > div{
+        width: 50%;
+        text-align: end;
+    }
+    #tecnologias{
+        display: flex;
+        flex-direction: column;
+        padding: o 2rem;
+    }
+    .item-exp{
+        display: flex;
+        justify-content: space-between;
+    }
+    .exp-bot{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /*celular*/
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    body{
+        padding: 1rem 0;
+    }
+    body > nav > div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    body > nav > div > a{
+        padding: 0.3rem 0;
+    }
+    #apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #apresentacao > div{
+        text-align: center;
+    }
+    .exp-top{
+        margin-bottom: 0.5rem;
+    }
+}
